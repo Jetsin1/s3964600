@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+       <title>Icon Square</title>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
+    </head>
+
+    <body style="background-color:beige;">
+
+        <div class="row1">
+            <img id="sfx1" img src="img/Arrow Gray.png" height="200" width="200"/>
+            <img id="sfx2" img src="img/Light Disc.png" height="200" width="200"/>
+            <img id="sfx3" img src="img/Bullet.png" height="200" width="200"/>
+        </div>
+
+        <div class="row2">
+            <img id="sfx4" img src="img/Basket Ball Fast.png" height="200" width="200"/>
+            <img id="sfx5" img src="img/Cannon Fire.png" height="200" width="200"/>
+            <img id="sfx6" img src="img/Kuuunai.png" height="200" width="200"/>
+        </div>
+
+        <div class="row">
+            <img id="sfx7" img src="img/Rocket.png" height="200" width="200"/>
+            <img id="sfx8" img src="img/SHURIKEN.png" height="200" width="200"/>
+            <img id="sfx9" img src="img/Paper Airplane.png" height="200" width="200"/>
+        </div>
+        
+            <script>
+                var Arrow = new buzz.sound("sfx/Arrow.mp3");
+                var Disc = new buzz.sound("sfx/Disc.mp3");
+                var Bullet = new buzz.sound("sfx/Bullet.mp3");
+                var Ball = new buzz.sound("sfx/Bounce.mp3");
+                var Cannon = new buzz.sound("sfx/Cannon.mp3");
+                var Kunai = new buzz.sound("sfx/Kunai.mp3");
+                var Rocket = new buzz.sound("sfx/Missile.mp3");
+                var Star = new buzz.sound("sfx/Shuriken.mp3");
+                var Plane = new buzz.sound("sfx/Paper.mp3");
+
+
+                window.onload = function() {
+                    document.getElementById('sfx1').addEventListener('click', function () {Arrow.play();});
+                    document.getElementById('sfx2').addEventListener('click', function () {Disc.play();});
+                    document.getElementById('sfx3').addEventListener('click', function () {Bullet.play();});
+                    document.getElementById('sfx4').addEventListener('click', function () {Ball.play();});
+                    document.getElementById('sfx5').addEventListener('click', function () {Cannon.play();});
+                    document.getElementById('sfx6').addEventListener('click', function () {Kunai.play();});
+                    document.getElementById('sfx7').addEventListener('click', function () {Rocket.play();});
+                    document.getElementById('sfx8').addEventListener('click', function () {Star.play();});
+                    document.getElementById('sfx9').addEventListener('click', function () {Plane.play();});
+
+                }
+            </script>
+
+
+
+    </body>
+    
+</html>
